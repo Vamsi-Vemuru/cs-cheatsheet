@@ -11,7 +11,11 @@ handlers:
 
 - url: /modulelist_tags.html
   static_files: modulelist_tags.html
-  upload: modulelist_tags\.html 
+  upload: modulelist_tags\.html
+
+- url: /libraries
+  static_files: libraries.html
+  upload: libraries\.html
 
 - url:  /bower_components/
   static_dir: bower_components
