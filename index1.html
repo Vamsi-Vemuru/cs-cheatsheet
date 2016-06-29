@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Programming Quick Reference</title>
+    <link rel="import" href="modulelist_tags.html">
+    <!-- Material Design Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--     <link href="css/perfect-scrollbar.min.css" rel="stylesheet">
+    <link href="css/perfect-scrollbar.css" rel="stylesheet"> -->
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" href="css/mdb.css">
+    <link rel="stylesheet" href="css/bootstrap.fd.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/solarized-dark.css">
+    <script src="js/highlight.pack.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/annotator.min.css">
+    <style type="text/css">
+    /* .nav-stacked, .tab-pane {
+    max-height: calc(100vh - 110px);
+    overflow-y: auto;
+    } */
+    .nav-stacked, .tab-pane { overflow:hidden;}
+    .nav-stacked:hover { overflow-y:scroll; }
+    ::-webkit-scrollbar {
+    width: 8px;
+    }
+    ::-webkit-scrollbar-button {
+    width: 8px;
+    height:5px;
+    }
+    ::-webkit-scrollbar-track {
+    background:#eee;
+    border: thin solid lightgray;
+    box-shadow: 0px 0px 3px #dfdfdf inset;
+    border-radius:10px;
+    }
+    ::-webkit-scrollbar-thumb {
+    background:#999;
+    border: thin solid gray;
+    border-radius:10px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+    background:#7d7d7d;
+    }  
+    </style>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </head>
+  <body>
+    <header>
+    </header>
+    <main>
+    <div>
+      
+    </div>
+    <div class="container" id="Demo">
+      <div class="card blue darken-4 white-text">
+        <div class="card-text text-center">
+          <h3>Programming Quick Reference</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <h3>Python</h3>
+        </div>
+        <div class="col-md-4">
+          <h3>Java</h3>
+        </div>
+        <div class="col-md-4">
+          <h3>C++</h3>
+        </div>
+      </div>
+      <div class="row">
+
+        <module-box1 module_number="1" module_name="Hello World">
+          <div class="row">
+            <div class="col-md-4">
+<pre><code class="python">print "Hello World"</code></pre>
+            </div>
+            <div class="col-md-4">
+<pre><code class="java">System.out.println("Hello World");
+if
+</code></pre>
+            </div>
+            <div class="col-md-4">
+              <pre><code class="cpp">cout << "Hello World";
+              </code></pre>
+            </div>
+          </div>
+        </module-box1>
+
+        <module-box1 module_number="2" module_name="Variables - Integer">
+          <div class="col-md-4">
+          <code>
+            i = 10<br>
+            #Integer Literals<br>
+            i = 3L #Long integer<br>
+            i = 0177 #Octal<br>
+            i = 0xdeadbeef #Hexadecimal
+          </code>
+          </div>
+          <div class="col-md-4">
+          <code>
+            int i = 10;<br>
+            //Integer Literals<br>
+            int i = 0177; //Octal<br>
+            int i = 0xdeadbeef; //Hexadecimal<br>
+          </code>
+          </div>
+          <div class="col-md-4">
+          <code>
+            int i = 10;<br>
+            //Integer Literals<br>
+            i = 30l; //long int
+            i = 0177; //Octal<br>
+            i = 0xdeadbeef; //Hexadecimal<br>
+          </code>
+          </div>
+        </module-box1>
+
+        <module-box1 module_number="3" module_name="Variables - Floating Point">
+          <div class="col-md-4">
+          <code>
+            d = 10.1010<br>
+            #Floating Point literals<br>
+            d = 10.<br>
+            d = .001<br>
+            d = 1e100<br>
+            d = 3.14e-10<br>
+            d = 0e0
+          </code>
+          </div>
+          <div class="col-md-4">
+          <code>
+            double d = 10.1010;<br>
+            //Floating Point literals<br>
+            d = 10.<br>
+            d = .001<br>
+            d = 1e100<br>
+            d = 3.14e-10
+          </code>
+          </div>
+          <div class="col-md-4">
+          <code>
+            double d = 10.1010;<br>
+            //Floating Point literals<br>
+            d = 10.<br>
+            d = .001<br>
+            d = 1e100<br>
+            d = 3.14e-10
+          </code>
+          </div>
+        </module-box1>
+        
+        <module-box1 module_number="4" module_name="Variables - Character">
+          <div class="col-md-4">
+          <code>
+            c = 'a'
+          </code>
+          </div>
+          <div class="col-md-4">
+          <code>
+            char c = 'a';
+          </code>
+          </div>
+          <div class="col-md-4">
+          <code>
+            char c = 'a';
+          </code>
+          </div>
+        </module-box1>
+
+        <module-box1 module_number="5" module_name="Variables - String">
+          <div class="col-md-4">
+          <code>
+            s = 'This is a string'<br>
+            '''In python, a string may be represented in single or double quotes'''<br>
+            s1 = "This is a string"
+          </code>
+          </div>
+          <div class="col-md-4">
+          <code>
+            String s = "This is a string";
+          </code>
+          </div>
+          <div class="col-md-4">
+          <code>
+            string s = "This is a string";
+          </code>
+          </div>
+        </module-box1>
+
+        <module-box1 module_number="6" module_name="Print - Integers">
+          <div class="row">
+            <div class="col-md-4">
+              <code>
+                #Direct printing<br>
+                print 10<br>
+                #Printing using variable<br>
+                i = 10<br>
+                print i
+              </code>
+            </div>
+            <div class="col-md-4">
+              <code>
+                //Direct printing<br>
+                System.out.println(10);<br>
+                //Printing using variable<br>
+                int i = 10;
+                System.out.println(i);
+              </code>
+            </div>
+            <div class="col-md-4">
+              <code>
+                //Direct Printing<br>
+                cout << 10;<br>
+                //Printing using variable<br>
+                int i = 10;<br>
+                cout << i;
+              </code>
+            </div>
+          </div>
+        </module-box1>
+
+        <module-box1 module_number="7" module_name="Print - Floating Point">
+          <div class="row">
+            <div class="col-md-4">
+              <code>
+                #Direct printing<br>
+                print 10.10<br>
+                #Printing using variable<br>
+                d = 10.10<br>
+                print d
+              </code>
+            </div>
+            <div class="col-md-4">
+              <code>
+                //Direct printing<br>
+                System.out.println(10.10);<br>
+                //Printing using variable<br>
+                Double d = 10.10;
+                System.out.println(d);
+              </code>
+            </div>
+            <div class="col-md-4">
+              <code>
+                //Direct Printing<br>
+                cout << 10.10;<br>
+                //Printing using variable<br>
+                double d = 10;<br>
+                cout << d;
+              </code>
+            </div>
+          </div>
+        </module-box1>
+        
+        <module-box1 module_number="8" module_name="Print - Characters">
+          <div class="row">
+            <div class="col-md-4">
+              <code>
+                c = 'c'<br>
+                print c
+              </code>
+            </div>
+            <div class="col-md-4">
+              <code>
+                char c = 'a';<br>
+                System.out.println(c);
+              </code>
+            </div>
+            <div class="col-md-4">
+              <code>
+                char c = 'a';<br>
+                cout << c;
+              </code>
+            </div>
+          </div>
+        </module-box1>
+
+        <module-box1 module_number="9" module_name="Branching">
+          <div class="col-md-4">
+          <code>
+            i = 10<br>
+            if i < 10:<br>
+            &nbsp&nbspprint i + 1<br>
+            elif i > 10:<br>
+            &nbsp&nbspprint i - 1<br>
+            else:<br>
+            &nbsp&nbspprint i
+          </code>
+          </div>
+          <div class="col-md-4">
+          <code>
+            int i = 10;<br>
+            if (i < 10) {<br>
+            &nbsp&nbspSystem.out.println(i + 1);<br>
+            } else if (condition) {<br>
+            &nbsp&nbspSystem.out.println(i - 1);<br>
+            } else {<br>
+            &nbsp&nbspSystem.out.println(i);<br>
+            }
+          </code>
+          </div>
+          <div class="col-md-4">
+          <code>
+            int i = 10;<br>
+            if (i < 10) {<br>
+            &nbsp&nbspcout << (i + 1);<br>
+            } else if (i > 10) {<br>
+            &nbsp&nbspcout << (i - 1);<br>
+            } else {<br>
+            &nbsp&nbspcout << (i);<br>
+            }
+          </code>
+          </div>
+        </module-box1>
+
+        <module-box1 module_number="8" module_name="Loops - For loop">
+          <div class="col-md-4">
+            <code>
+              for i in range(0,10):<br>
+              &nbsp&nbspprint i + 1
+            </code>
+          </div>
+          <div class="col-md-4">
+            <code>
+              for (int i = 0; i < 10; i++) {<br>
+              &nbsp&nbspSystem.out.println(i + 1);<br>
+              }
+            </code>
+          </div>
+          <div class="col-md-4">
+            <code>
+              for (int i = 0; i < 10; i++) {<br>
+              &nbsp&nbscout << (i + 1);<br>
+              }
+            </code>
+          </div>
+        </module-box1>
+
+        <module-box1 module_number="9" module_name="Loops - Enhanced For loop">
+          <div class="col-md-4">
+            <code>
+              arr_data = [1,2,3,4,5]<br>
+              for element in arr_data:<br>
+              &nbsp&nbspprint element
+            </code>
+          </div>
+          <div class="col-md-4">
+            <code>
+              int[] arr_data = {1,2,3,4,5};<br>
+              for (int element : arr_data) {<br>
+              &nbsp&nbspSystem.out.println(element);<br> 
+              }
+            </code>
+          </div>
+          <div class="col-md-4">
+            <code>
+              //C++ has no enhanced for loop construct
+            </code>
+          </div>
+        </module-box1>
+
+        <module-box1 module_number="10" module_name="Loops - While loop">
+          <div class="col-md-4">
+            <code>
+              i = 0<br>
+              while i < 10:<br>
+              &nbsp&nbspprint i + 1
+            </code>
+          </div>
+          <div class="col-md-4">
+            <code>
+              int i = 0;<br>
+              while (i < 10) {<br>
+              &nbsp&nbspSystem.out.println(i + 1);<br>
+              }
+            </code>
+          </div>
+          <div class="col-md-4">
+            <code>
+              int i = 0;<br>
+              while (i < 10) {<br>
+              &nbsp&nbspcout << (i + 1);<br>
+              }
+            </code>
+          </div>
+        </module-box1>
+
+      </div>
+    </div>
+    </main>
+  </body>
+</html>

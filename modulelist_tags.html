@@ -1,0 +1,104 @@
+<link rel="import"
+	href="bower_components/polymer/polymer.html">
+	
+	<dom-module id="test-out-box">
+	  <template>
+ 
+	    <p>If you already know the learning objectives, solve the following problem(s)
+	      <ol>
+	        <content></content>
+	      </ol>
+	    </p>
+	    <p>If you cannot solve the problems, <a href="{{guide_url}}" >start learning step by step</a>.</p>
+	  </template>
+	  <script>
+	    Polymer({
+	      is: "test-out-box",
+	      properties: {
+	      	guide_url: {
+	      		type: String,
+	      		value: "#"
+	      	}
+	      }
+	    });
+	  </script>
+	</dom-module>
+
+
+
+	<dom-module id="learning-objectives">
+		<template>
+		<p>By the end of this module you will learn to do the following
+			<ol>
+				<content></content>
+			</ol>
+		</p>
+		</template>
+		<script>
+			Polymer({
+				is: "learning-objectives"
+			});
+		</script>
+	</dom-module>
+
+<dom-module id="module-box1">
+		<template>
+		
+		<div class="panel panel-info">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+				{{module_number}}. {{module_name}}
+				</h4>
+			</div>
+			<div id="module{{module_number}}">
+				<div class="panel-body modulelist">
+					<content></content>
+				</div>
+			</div>
+		</div>
+	
+		</template>
+		<script>
+		Polymer({
+			is: "module-box1",
+			properties: {
+        module_number: {
+          type: String
+        },
+        module_name: {
+        	type: String
+        }
+      }   
+		});
+		</script>
+	</dom-module>
+
+	<dom-module id="module-box">
+		<template>
+		<div class="panel panel-info">
+			<div class="panel-heading hoverable">
+				<h4 class="panel-title">
+				<a data-toggle="collapse" data-parent="#myAccordion" href="#module{{module_number}}">{{module_number}}. {{module_name}}</a>
+				</h4>
+			</div>
+			<div id="module{{module_number}}" class="panel-collapse collapse">
+				<div class="panel-body modulelist">
+					<content></content>
+				</div>
+			</div>
+		</div>
+		</template>
+		<script>
+		Polymer({
+			is: "module-box",
+			properties: {
+        module_number: {
+          type: String
+        },
+        module_name: {
+        	type: String
+        }
+      }   
+		});
+		</script>
+	</dom-module>

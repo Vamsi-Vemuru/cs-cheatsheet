@@ -1,0 +1,22 @@
+{
+  "name": "stepbystep",
+  "description": "stepbystep template elements",
+  "main": "",
+  "moduleType": [],
+  "authors": [
+    "Vamsi"
+  ],
+  "license": "MSIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#~1.4.0"
+  }
+}
