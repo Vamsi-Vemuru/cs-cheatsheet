@@ -505,7 +505,7 @@ else:
 		int i = 10;
 		if (i < 10) {
 		  System.out.println(i + 1);
-		} else if (condition) {
+		} else if (i > 10) {
 		  System.out.println(i - 1);
 		} else {
 		  System.out.println(i);
@@ -550,10 +550,9 @@ void main() {
 <pre><code class="java">public class ForLoop {
 	public static void main(String[] args) {
 		for (int i = 0; i < 10; i++) {
-  		System.out.println(i + 1);
+			System.out.println(i + 1);
   	}
 	}
-}
 }</code></pre>
             </div>
             </div>
@@ -610,7 +609,8 @@ for element in arr_data:
             <p>The code below shows the use of While loop statement in Python</p>
 <pre><code class="python">i = 0
 while i < 10:
-  print i + 1</code></pre>
+  print i + 1
+  i += 1</code></pre>
             </div>
             </div>
             <div class="col-md-4">
@@ -621,6 +621,7 @@ while i < 10:
 		int i = 0;
 		while (i < 10) {
 		  System.out.println(i + 1);
+		  i++;
 		}
 	}
 }</code></pre>
@@ -635,6 +636,7 @@ void main() {
 	int i = 0;
 	while (i < 10) {
 	  cout << (i + 1);
+	  i++;
 	}
 }</code></pre>
             </div>
@@ -650,7 +652,7 @@ void main() {
 <pre><code class="python">def print_hello():
   print "hello"
 
-  print_hello()</code></pre>
+print_hello()</code></pre>
             </div>
             </div>
             <div class="col-md-4">
@@ -736,7 +738,7 @@ void main() {
 <pre><code class="python">def return_int(int):
   return int
 
-  print return_int(10)</code></pre>
+print return_int(10)</code></pre>
             </div>
             </div>
             <div class="col-md-4">
@@ -858,7 +860,7 @@ assert (c > 5),"Value less than or equal to 5, therefore invalid"
             <div class="col-md-4">
             <div class="expln">
             <p>The Java code below is an example that shows a function in which has an assertion that the function will execute only if the assert condition is met</p>
-<pre><code class="cpp">#include&lt;cassert&gt;
+<pre><code class="cpp">#include&lt;iostream&gt;
 #include&lt;cassert&gt;
 int main() {
 	int a = 3;
